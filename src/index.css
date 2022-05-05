@@ -1,13 +1,70 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.input {
+  position: relative;
+  margin-top: 23px;
+  margin-left: 78px;
+  margin-bottom: 15px;
+}
+
+input{
+  padding: 18px 55px 15px 26px;
+  width: 631px;
+  height: 52px;
+  left: 226px;
+  top: 209px;
+  background: #5A5C66;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  margin-left: -40px;
+  width: 21px;
+  height: 21px;
+  top: 17px;
+  color: #fff;
+}
+
+.table-bordered thead{
+  height: 54px;
+}
+
+.table>thead {
+  vertical-align: middle;
+}
+
+img, svg {
+  margin-left: 39px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: none;
+}
+
+.table-bordered thead tr th{
+  min-width: 110px;
+  background: #474955;
+  border: none;
+  color: #fff;
 }
