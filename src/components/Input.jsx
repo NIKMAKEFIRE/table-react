@@ -9,6 +9,7 @@ const Input = () => {
     // }, [searchQuery])
 
     const [value, setValue] = useState('')
+    const [values, setValues] = useState('')
 
     useEffect(() => {
         searchUsers()
@@ -25,7 +26,7 @@ const Input = () => {
 
     return (
         <div className="input">
-            <input placeholder="Поиск" type="text" value={value} onChange={(e) => setValue(e.target.value)} />
+            <input placeholder="Поиск" type="text" value={values} onChange={(e) => setValues(e.target.value)} />
             <GoSearch className="icon" />
         </div>
     )

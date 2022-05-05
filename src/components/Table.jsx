@@ -26,7 +26,7 @@ const TablePage = ({ posts, setPosts }) => {
     }
 
     return (
-        <Table striped bordered hover>
+        <Table striped bordered>
             <thead>
                 <tr>
                     <th onClick={() => sorting('id')}>
@@ -47,7 +47,7 @@ const TablePage = ({ posts, setPosts }) => {
                 {
                     posts.map((post, index) =>
                         <tr key={index + 1}>
-                            <td>{post.id}</td>
+                            <td style={{textAlign: 'center'}}>{post.id}</td>
                             <td>{post.title}</td>
                             <td>{post.body}</td>
                         </tr>

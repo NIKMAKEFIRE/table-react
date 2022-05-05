@@ -16,14 +16,18 @@ code {
     monospace;
 }
 
+.App {
+  margin: 0 auto;
+  width: 1077px;
+}
+
 .input {
   position: relative;
   margin-top: 23px;
-  margin-left: 78px;
   margin-bottom: 15px;
 }
 
-input{
+input {
   padding: 18px 55px 15px 26px;
   width: 631px;
   height: 52px;
@@ -46,7 +50,7 @@ input{
   color: #fff;
 }
 
-.table-bordered thead{
+.table-bordered thead {
   height: 54px;
 }
 
@@ -55,16 +59,136 @@ input{
 }
 
 img, svg {
-  margin-left: 39px;
+  margin-left: 34px;
 }
+
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
   --bs-table-accent-bg: none;
+  color: #474955;
 }
 
-.table-bordered thead tr th{
+.table-bordered thead tr th {
   min-width: 110px;
   background: #474955;
   border: none;
   color: #fff;
+}
+
+.table-bordered thead tr th:nth-child(1) {
+  padding-left: 23px;
+}
+
+.table-bordered thead tr th:nth-child(2) {
+  padding-left: 110px;
+}
+
+.table-bordered thead tr th:nth-child(3) {
+  padding-left: 121px;
+}
+
+.table-bordered td {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #474955;
+}
+
+.paginationButtons {
+  padding: 0;
+}
+
+.paginationButtons, .pagination {
+  list-style: none;
+  margin: 0 auto;
+  width: 1010px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paginationButtons li a {
+  list-style: none;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #474955;
+}
+
+.previousButton, .page-link {
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #474955;
+}
+
+.nextButton {
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #474955;
+}
+
+.activeButton a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #7EBC3C;
+}
+
+.disabledButton a {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 137.69%;
+  color: #474955;
+}
+
+.pages {
+  margin: 0 auto;
+  width: 1010px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pages ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.active--page{
+  padding: 0 13px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #7EBC3C;
+}
+
+.page {
+  padding: 0 13px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #474955;
+}
+
+.pages ul li a .active {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 137.69%;
+  color: #7EBC3C;
 }
