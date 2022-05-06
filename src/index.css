@@ -43,7 +43,7 @@ input {
 
 .icon {
   position: absolute;
-  margin-left: -40px;
+  margin-left: -50px;
   width: 21px;
   height: 21px;
   top: 17px;
@@ -94,59 +94,6 @@ img, svg {
   color: #474955;
 }
 
-.paginationButtons {
-  padding: 0;
-}
-
-.paginationButtons, .pagination {
-  list-style: none;
-  margin: 0 auto;
-  width: 1010px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.paginationButtons li a {
-  list-style: none;
-  text-decoration: none;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #474955;
-}
-
-.previousButton, .page-link {
-  text-decoration: none;
-  background-color: transparent;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
-  color: #474955;
-}
-
-.nextButton {
-  text-decoration: none;
-  background-color: transparent;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
-  color: #474955;
-}
-
-.activeButton a {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #7EBC3C;
-}
-
-.disabledButton a {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 .btn {
   font-weight: 500;
   font-size: 24px;
@@ -169,6 +116,7 @@ img, svg {
 }
 
 .active--page{
+  text-decoration: none;
   padding: 0 13px;
   font-style: italic;
   font-weight: 700;
@@ -178,17 +126,12 @@ img, svg {
 }
 
 .page {
+  text-decoration: none;
   padding: 0 13px;
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: #474955;
-}
-
-.pages ul li a .active {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 137.69%;
-  color: #7EBC3C;
+  cursor: pointer;
 }
